@@ -1,12 +1,12 @@
 .. image:: https://img.shields.io/badge/pstn--024-lsst.io-brightgreen.svg
    :target: https://pstn-024.lsst.io
-.. image:: https://travis-ci.com/lsst-pst/pstn-024.svg
-   :target: https://travis-ci.com/lsst-pst/pstn-024
+.. image:: https://github.com/lsst-pst/pstn-024/workflows/CI/badge.svg
+   :target: https://github.com/lsst-pst/pstn-024/actions
 
-########################################################
-LSST Data Management System Verification and Validation
 
-########################################################
+################################
+Overview of LSST Data Management
+################################
 
 PSTN-024
 ========
@@ -62,3 +62,9 @@ To update to a newer version of `lsst-texmf`_, you can update the submodule in t
 Commit, then push, the updated submodule.
 
 .. _lsst-texmf: https://github.com/lsst/lsst-texmf
+
+Guidelines for authors (in development)
+=======================================
+
+Tense: Write in the present tense. e.g The raw data is processed by the LSST science pipelines. 
+ 

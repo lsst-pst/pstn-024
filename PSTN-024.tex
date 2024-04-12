@@ -1,40 +1,61 @@
-\documentclass[modern]{aastex62}
-
-% lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
-\input{meta}
+\documentclass[twocolumn]{aastex631}
 
 % Package imports go here.
 
 % Local commands go here.
+
+\graphicspath{{./images/}}
 
 
 
 \newcommand{\docRef}{PSTN-024}
 \newcommand{\docUpstreamLocation}{\url{https://github.com/lsst-pst/pstn-024}}
 
+\providecommand{\secref}[1]{Section~\ref{#1}}
+\providecommand{\appref}[1]{Appendix~\ref{#1}}
+\providecommand{\partref}[1]{Part~\ref{#1}}
+\providecommand{\tabref}[1]{Table~\ref{#1}}
+\providecommand{\figref}[1]{Figure~\ref{#1}}
+\providecommand{\eqnref}[1]{Eq.~\ref{#1}}
+
 
 \begin{document}
 \input{authors}
-\date{\today}
-\title{LSST Data Management System Verification and Validation
-}
-\hypersetup{pdftitle={\@title}, pdfauthor={\@author}, pdfkeywords={\@keywords}}
+\title{Scientific Performance of the Rubin LSST Data Products}
+\hypersetup{
+    pdftitle={Scientific Performance of the Rubin LSST Data Products},
+    pdfauthor={Guy et al},
+    pdfkeywords={LSST, Data Management}}
+
 
 \input{abstract}
 
+\keywords{%
+    Astrophysics - Instrumentation and Methods for Astrophysics
+    ---
+    methods: data analysis
+    ---
+    methods: miscellaneous
+}
+
 \input{body}
 
-\appendix
-% Remove this when you strart your paper
-\input{appendix}
+\begin{acknowledgments}
+This material is based upon work supported in part by the National Science Foundation through Cooperative Agreement AST-1258333 and Cooperative Support Agreement AST-1202910 managed by the Association of Universities for Research in Astronomy (AURA), and the Department of Energy under Contract No. DE-AC02-76SF00515 with the SLAC National Accelerator Laboratory managed by Stanford University.
+Additional Rubin Observatory funding comes from private donations, grants to universities, and in-kind support from LSSTC Institutional Members.
+\end{acknowledgments}
+
+\facilities{Rubin (LSSTCam), RubinAux (LATISS)}
+\software{
+    Rubin Science Platform \citep{LDM-542},
+    LSST Science Pipelines \citep{PSTN-019},
+    Qserv \citep{Wang:2011:QDS:2063348.2063364}
+}
+
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-\section{References} \label{sec:bib}
-\bibliographystyle{yahapj}
+\label{sec:bib}
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
-% Make sure lsst-texmf/bin/generateAcronyms.py is in your path
-\section{Acronyms} \label{sec:acronyms}
-\input{acronyms.tex}
 
 \end{document}

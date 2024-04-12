@@ -1,22 +1,32 @@
 \documentclass[twocolumn]{aastex631}
 
-
 % Package imports go here.
 
 % Local commands go here.
 
+\graphicspath{{./images/}}
 
-\newcommand{\docRef}{PSTN-024}
-\newcommand{\docUpstreamLocation}{\url{https://github.com/lsst-pst/pstn-024}}
+
+
+\newcommand{\docRef}{PSTN-017}
+\newcommand{\docUpstreamLocation}{\url{https://github.com/lsst-pst/pstn-017}}
+
+\providecommand{\secref}[1]{Section~\ref{#1}}
+\providecommand{\appref}[1]{Appendix~\ref{#1}}
+\providecommand{\partref}[1]{Part~\ref{#1}}
+\providecommand{\tabref}[1]{Table~\ref{#1}}
+\providecommand{\figref}[1]{Figure~\ref{#1}}
+\providecommand{\eqnref}[1]{Eq.~\ref{#1}}
 
 
 \begin{document}
 \input{authors}
-\date{\today}
+\title{Scientific Performance of the Rubin LSST Data Products}
 \hypersetup{
-    pdftitle={Scientific Performance of  Rubin Observatory LSST Data Management},
+    pdftitle={Scientific Performance of the Rubin LSST Data Products},
     pdfauthor={Guy et al},
     pdfkeywords={LSST, Data Management}}
+
 
 \input{abstract}
 

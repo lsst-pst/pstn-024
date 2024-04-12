@@ -1,0 +1,12 @@
+*.out
+acronyms.tex
+authors.tex
+meta.tex
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+PST*pdf
+*.xdv
